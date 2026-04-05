@@ -3,7 +3,7 @@ import css from "./MovieModal.module.css"
 import React, { useEffect } from "react";
 import type { Movie } from "../../types/movie";
 
-type MovieModalProps={
+export interface MovieModalProps{
     movie: Movie;
     onClose: () => void;
     children?: React.ReactNode;
