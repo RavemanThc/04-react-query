@@ -18,7 +18,7 @@ export default function MovieModal({movie, onClose}: MovieModalProps){
     }
   };
 
-  // закриття по ESC та блокування скролу
+ 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {

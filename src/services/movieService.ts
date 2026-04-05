@@ -12,10 +12,6 @@ export interface MovieResponse {
   total_results: number;
 }
 
-export interface MovieResponse{
-    results: Movie[];
-}
-
 export default async function fetchMovies({
   query,
   language = "en-US",
