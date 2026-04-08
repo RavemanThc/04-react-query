@@ -1,14 +1,12 @@
 import axios from "axios";
 import type { Movie } from "../types/movie";
 
-// Page тепер обов'язковий
 type FetchMoviesParams = {
   query: string;
   page: number;          
   language?: string;     
 };
 
-// Відповідь API
 export interface MovieResponse {
   page: number;
   results: Movie[];
